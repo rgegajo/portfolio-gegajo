@@ -13,99 +13,206 @@
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+	<!-- kit code -->
+	<script src="https://kit.fontawesome.com/4602573fa1.js" crossorigin="anonymous"></script>
 
 	<title>My Portfolio</title>
 
 </head>
 <body>
 	<!-- nav bar -->
-	<nav class="navbar navbar-expand-lg" id="navbar">
+	<nav class="navbar navbar-expand-lg navbar-light">
   		<a class="navbar-brand" href="#"></a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="navbarNav">
-    		<ul class="navbar-nav">
+  			
+  			<!-- <ul class="navbar-nav mr-auto">
+  				<li>
+  					<img src="./images/RgegajoLogo.gif" id="logo">
+  				</li>
+  				<li>
+  					<input type="checkbox" class=""><i class="fas fa-hard-hat"></i>
+  				</li>
+  			</ul>  -->
+				
+    		<ul class="navbar-nav ml-auto">
+    			<li class="nav-link">
+    				<input type="checkbox" hidden class=""><i class="fas fa-meteor"></i>
+    			</li>
       			<li class="nav-item active">
-        			<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        			<a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
       			</li>
       			<li class="nav-item">
-      			  	<a class="nav-link" href="#">Abount Me</a>
+      			  	<a class="nav-link" href="#AboutMe">About Me</a>
       			</li>
       			<li class="nav-item">
-        			<a class="nav-link" href="#">Tools</a>
+       				<a class="nav-link" href="#Projects">Projects</a>
       			</li>
       			<li class="nav-item">
-       				<a class="nav-link" href="#">Projects</a>
+        			<a class="nav-link" href="#Tools">Tools</a>
       			</li>
       			<li class="nav-item">
-      			 	<a class="nav-link" href="#">Contact</a>
+      			 	<a class="nav-link" href="#Contact">Contact</a>
       			</li>
     		</ul>
   		</div>
 	</nav>
 
 	<!-- Introduction -->
-	<main>
+	<main id="Home">
 	<!-- for background -->
-	<section class="wrapper">
-		<div id="stars"></div>
-		<div id="stars2"></div>
-		<div id="stars3"></div>
-		<div id="title"></div>
-	</section>
-	<!-- content -->
-		<div class="row" id="introDuction">
-			<div class="col-md-6">
-				<h1>Hello! I'm Roselle</h1>
-				<p>I'm a Full Stack Developer</p>
-				<button type="button" class="btn btn-dark d-flex flex-column align-self-end">Download My Resume</button>
+	<div>
+		<div class="wrapper">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+			<div id="title"></div>
+		
+		<!-- content -->
+			<div class="row p-5" id="introDuction">
+				<div class="col-md-6 d-flex flex-column align-self-center">
+					<h2>Welcome! I'm Roselle!</h2>
+					<p>I'm a Full Stack Developer.</p>
+					<button type="button" class="btn btn-light">Download My Resume</button>
+				</div>
+
+		<!-- for shooting star mode -->
+				<div class="col-md-6 d-flex flex-column align-self-center">
+					<div class="sky-container">
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+				  		<div class="shostar"></div>
+					</div>
+				</div>
 			</div>
-			
+
 		</div>
+
+	</div>
 	</main>
 
+
 	<!-- About Me -->
-	<section class="m-5">
+	<section class="m-5" id="AboutMe">
 		<div class="row">
-			<div class="col-md-6 text-center">
-				<h1>About Me</h1>
+			<div class="col-md-6 text-center" id="txt-aboutme">
+				<h1 class="mb-3 p-3" >About Me</h1>
+				<p>I am a Mechanical Engineer and a future Software Engineer. </p>
+				<p>My desire to learn and create things gave me courage to make the shift. I believe, this will fill largely part of my life, doing great works will be truly satisfied and loved. </p>
+				<p>"Curiosity is the Engine of Achievement" -Ken Robinson.</p>
+			</div>
+			<div class="col-md-6 d-flex flex-row align-items-center" id="img-rfg">
+				<img width="500" src="./images/rfg.png" class="img-fluid rounded-circle bg-gradient-dark">
 			</div>
 		</div>
 	</section>
 
 	<!-- Projects -->
-	<section class="m-5">
-		<div class="row">
-			<div class="col-md-6 text-center">
-				<h1>Projects</h1>
-			</div>
-			
+	<section class="m-5 p-5" id="Projects">
+		<h1 class="text-center m-3">Projects</h1>
 
+		<div class="card-deck">
+		  <div class="card">
+		    <img src="./images/cms1.jpg" class="card-img-top" alt="...">
+		    <div class="card-body text-light">
+		      <h5 class="card-title">Capstone 1</h5>
+		      <p class="card-text">My own portfolio. Final touches!</p>
+		      <p class="card-text">
+		      	<small class="text-muted">Please give me a heart.</small>
+		      </p>
+		      <span>
+		      	<i class="far fa-heart"></i>
+		      </span>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <img src="./images/cms2.jpg" class="card-img-top" alt="...">
+		    <div class="card-body text-light">
+		      <h5 class="card-title">Capstone 2</h5>
+		      <p class="card-text">This will be big!.</p>
+		      <p class="card-text"><small class="text-muted">Can't wait for your heart.</small></p>
+		      <span><i class="far fa-heart"></i></span>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <img src="./images/cms3.jpg" class="card-img-top" alt="...">
+		    <div class="card-body text-light">
+		      <h5 class="card-title">Capstone 3</h5>
+		      <p class="card-text">Major head turner here!</p>
+		      <p class="card-text"><small class="text-muted">Heartu!</small></p>
+		      <span><i class="far fa-heart"></i></span>
+		    </div>
+		  </div>
 		</div>
 	</section>
 
 	<!-- Tools -->
-	<section>
-		<div class="row">
-			<div class="col-md-6 text-center">
-				<h1>Tools I used</h1>
+	<section class="container" id="Tools">
+		<h1 class="text-center">Skills & Tools</h1>
+		<div class="row d-flex justify-content-start" id="row-frontendskills">
+			<div class="col-md-6 m-3 p-3 text-center text-light" id="col-frontendskills">
+				<p></p>
+				<img src="./images/skills/logo-html5.png">
+				<img src="./images/skills/logo-css3.png">
+				<img src="./images/skills/logo-javascript.png">
+			</div>
+		</div>
+
+		<div class="row d-flex justify-content-center" id="row-backendskills">
+			<div class="col-md-6 m-3 p-3 text-center text-light" id="col-backendskills">
+				<p></p>
+				<img src="./images/skills/logo-mongodb.png">
+				<img src="./images/skills/logo-nodejs.png">
+				<img src="./images/skills/logo-expressjs.png">
+			</div>
+		</div>
+
+		<div class="row d-flex justify-content-end" id="row-skills" >
+			<div class="col-md-6 m-3 p-3 text-center text-light" id="col-skills">
+				<p></p>
+				<img src="./images/skills/logo-bootstrap.png">
+				<img src="./images/skills/logo-gitlab-ci-cd.png">
+				<img src="./images/skills/logo-sublime-text-3.png">
 			</div>
 		</div>
 	</section>
 
 	<!-- Contact -->
-	<section class="m-5">
-		<h1 class="text-center text-secondary">Contact</h1>
+	<section class="m-3 p-3" id="Contact">
+		<h1 class="text-center"></h1>
 		<div class="row mt-5">
-			<div class="col-md-6">
-				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bighit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></</iframe>
-				<div>
-					
+			<div class="col-md-6 d-flex flex-column justify-content-center">
+				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bighit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<p class="text-secondary pt-3">Contact Me!</p>
+				<div class="row">
+					<div class="" id="social_links">
+						<div class="btn-group">
+							<a class="btn" href="https://www.facebook.com/otchengiling" target="_blank"><i class="fab fa-facebook icon-4x"></i></a>
+							<a class="btn" href="https://www.instagram.com/babenancych/" target="_blank"><i class="fab fa-instagram icon-large"></i></a>
+							<a class="btn" href="https://www.linkedin.com/in/roselle-gegajo-992952154/" target="_blank"><i class="fab fa-linkedin icon-large"></i></a>
+							<a class="btn" href="https://github.com/rgegajo" target="_blank"><i class="fab fa-github icon-large"></i></a>
+						</div>						
+					</div>
 				</div>
+			<div>
+					
+		</div>
 			</div>
 			<div class="col-md-6">
+				<h4 class="text-center">Leave me a message:</h4>
 				<form>
 					<div class="form-group">
 						<label for="fname">Full Name:</label>
@@ -119,15 +226,17 @@
 						<label for="txt-area">Message:</label>
 						<textarea class="form-control" id="txt-area" rows="3"></textarea>
 					</div>
-					<button type="button" class="btn btn-success btn-block">Send</button>
+					<button type="button" class="btn btn-block" id="sendbtn">Send</button>
 				</form>
 			</div>
 		</div>
 	</section>
+
 	<!-- footer -->
-
-
-
+	<footer class="p-1 mt-1">
+		<p class="text-center">Roselle Gegajo</p>
+		<p class="text-center">Zuitt Coding Bootcamp - Batch 121</p>
+	</footer>
 
 	<!-- js dependencies -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,33 +1,387 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Mali', cursive;
+	/*box-sizing: border-box;*/
+	font-family: 'IBM Plex Mono', monospace;
+  scroll-behavior: smooth;
 }
 
-#navbar {
-	background-color: #47126b;
+/*navbar*/
+
+/*#logo {
+  height: 10px;
+  width: 10px;
+}*/
+
+/*.navbar-nav {
+  box-shadow: 0px 3px 5px rgba(227, 224, 230, 0.5);
+}*/
+
+
+
+/*--------------------------------------------------main homepage---------------------------- */
+
+main {
+    padding-top: 300px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #47126b 0%, #090a0f 100%);
+    /*240046 10002b*/
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
 }
-
-
 
 #introDuction {
-	padding-top: 275px;
-	padding-left: 75px;
-	font-size: 50px;
+  color: white;
+  padding: 50px;
 }
 
-/*for main backgound*/
+#introDuction h2 {
+  display: inline;
+ /*font-size: 40px;
+ font-weight: 40px;*/
+  /*white-space: nowrap;*/
 
-main { 
-	height: 800px;
-	overflow: hidden;
+}
+
+#introDuction button {
+  display: inline;
+  width: 200px;
+}
+
+#introDuction p {
+  display: inline;
+  /*font-size: 30px;
+  font-weight: 40px;*/
+  animation: type 5s steps(27) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid white;
+  width: 27ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 27ch;
+  }
+}
+
+#introDuction button:hover {
+  color: rgb(190, 159, 217, 0.3);
+  box-shadow: 0px 3px 5px rgba(227, 224, 230, 0.5);
+} 
+
+.wrapper { 
+  /*overflow: hidden;
 	background: radial-gradient(ellipse at bottom, #47126b 0%, #090a0f 100%);
 	/*240046 10002b*/
-	color: white;
-	font-size: 50px;
+	/*color: white;*/*/
 }
 
+
+
+/*------------------------about me-------------------------------*/
+#img-rfg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  border-radius: 300px;
+  background: radial-gradient(ellipse at bottom, #001d3d 0%, #240046 60%);
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+}
+
+#txt-aboutme {
+  padding: 5px;
+  display: inline;
+  font-size: 20px;
+  align-content: center;
+}
+
+
+/*----------------------Projects----------------------------------*/
+.card-deck .card {
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.2);
+  border-radius: 50px;
+  background: radial-gradient(ellipse at bottom, #001d3d 0%, #240046 60%);
+  overflow: hidden;
+  border-top: 1px solid rgb(255, 255, 255, 0.5);
+  border-left: 1px solid rgb(255, 255, 255, 0.5);
+  text-decoration-color: white;
+}
+
+.card-deck .card img {
+  width: auto;
+  height: auto;
+}
+
+/*-----------------------Tools I used------------------------------*/
+#col-frontendskills {
+  background: radial-gradient(ellipse at bottom, #47126b 0%, #090a0f 100%);
+  overflow: hidden;
+  border-radius: 50px;
+  border-style: inherit;
+
+}
+
+#col-backendskills {
+  background: radial-gradient(ellipse at bottom, #7b2cbf 0%, #090a0f 100%);
+  overflow: hidden;
+  border-radius: 50px;
+  border-style: inherit;
+
+}
+
+#col-skills {
+  background: radial-gradient(ellipse at bottom, #9d4edd 0%, #090a0f 100%);
+  overflow: hidden;
+  border-radius: 50px;
+  border-style: inherit;
+
+}
+
+#row-frontendskills {
+  animation: slide_right 3s ease-in-out;
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(250px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+#row-backendskills {
+  animation: slide_right 5s ease-in-out;
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(250px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+#row-skills {
+  animation: slide_right 7s ease-in-out;
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(250px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+/*-----------------------------------------------Contacts------------------------------------------*/
+#gmap_canvas {
+  height: 60vh;
+  width: 100%;
+}
+
+#social_links {
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.1);
+  border-radius: 50px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  align-content: center;
+}
+
+#sendbtn {
+  background: radial-gradient(ellipse at bottom, #7b2cbf 0%, #240046 60%);
+  color: white;
+}
+
+/*footer*/
+
+footer {
+  background: radial-gradient(ellipse at bottom, #001d3d 0%, #240046 60%);
+  font-size: 20px;
+  font-weight: 10px;
+  color: white;
+}
+
+
+
+
+/*----------------------------------------------for dif mode---------------------------------------*/
+/* for navbar shooting star*/
+.sky-container {
+	transform: rotateZ(45deg);
+}
+
+.shostar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #822faf, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.shostar::before, .shostar::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #822faf, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3000ms ease-in-out infinite;
+}
+
+.shostar::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.shostar:nth-child(1) {
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+  animation-delay: 650ms;
+}
+.shostar:nth-child(1)::before, .shostar:nth-child(1)::after {
+  animation-delay: 650ms;
+}
+
+.shostar:nth-child(2) {
+  top: calc(50% - -50px);
+  left: calc(50% - 190px);
+  animation-delay: 150ms;
+}
+.shostar:nth-child(2)::before, .shostar:nth-child(2)::after {
+  animation-delay: 150ms;
+}
+
+.shostar:nth-child(3) {
+  top: calc(50% - -90px);
+  left: calc(50% - 200px);
+  animation-delay: 1600ms;
+}
+.shostar:nth-child(3)::before, .shostar:nth-child(3)::after {
+  animation-delay: 1600ms;
+}
+
+.shostar:nth-child(4) {
+  top: calc(50% - 50px);
+  left: calc(50% - 250px);
+  animation-delay: 4700ms;
+}
+.shostar:nth-child(4)::before, .shostar:nth-child(4)::after {
+  animation-delay: 4700ms;
+}
+
+.shostar:nth-child(5) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(5)::before, .shostar:nth-child(5)::after {
+  animation-delay: 2100ms;
+}
+
+.shostar:nth-child(6) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(6)::before, .shostar:nth-child(6)::after {
+  animation-delay: 2100ms;
+}
+
+.shostar:nth-child(7) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(7)::before, .shostar:nth-child(7)::after {
+  animation-delay: 2100ms;
+}
+
+.shostar:nth-child(8) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(8)::before, .shostar:nth-child(8)::after {
+  animation-delay: 2100ms;
+}
+
+.shostar:nth-child(9) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(9)::before, .shostar:nth-child(9)::after {
+  animation-delay: 2100ms;
+}
+
+.shostar:nth-child(10) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.shostar:nth-child(10)::before, .shostar:nth-child(10)::after {
+  animation-delay: 2100ms;
+}
+
+/* Animations */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  
+  30% {
+    width: 100px;
+  }
+  
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(320px);
+  }
+}
+
+
+/*-----------------------------------for main backgound---------------------------------*/
+/*moving stars*/
 #stars {
 	width: 1px;
 	height: 1px;
