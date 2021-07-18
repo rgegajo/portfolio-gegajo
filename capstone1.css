@@ -218,6 +218,16 @@ footer {
   color: white;
 }
 
+.backtotop a {
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.backtotop a:hover {
+  background-color: transparent;
+  opacity: 0.2;
+}
 
 
 
