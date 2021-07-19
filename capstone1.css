@@ -8,6 +8,14 @@
 
 /*navbar*/
 
+nav {
+  background: radial-gradient(ellipse at right, #47126b 0%, #090a0f 100%);
+    /*240046 10002b*/
+}
+
+/*#navbarNav ul input {
+  background-color: white;
+} */
 /*#logo {
   height: 10px;
   width: 10px;
@@ -27,8 +35,8 @@ main {
     background: radial-gradient(ellipse at bottom, #47126b 0%, #090a0f 100%);
     /*240046 10002b*/
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 800px;
+    width: 100%;
 
 }
 
@@ -39,8 +47,8 @@ main {
 
 #introDuction h2 {
   display: inline;
- /*font-size: 40px;
- font-weight: 40px;*/
+ font-size: 40px;
+ font-weight: 25px;
   /*white-space: nowrap;*/
 
 }
@@ -52,13 +60,13 @@ main {
 
 #introDuction p {
   display: inline;
-  /*font-size: 30px;
-  font-weight: 40px;*/
-  animation: type 5s steps(27) infinite;
+  font-size: 18px;
+  font-weight: 15px;
+  animation: type 5s steps(28) infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid white;
-  width: 27ch;
+  width: 28ch;
 }
 
 @keyframes type {
